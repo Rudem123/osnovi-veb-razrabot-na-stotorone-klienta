@@ -1,5 +1,53 @@
 {
-    "printers": [],
-    "plastics": [],
-    "models": []
-  }
+  "printers": [
+    {
+      "id": "5aa62d3d-3369-4ff1-907e-0a816af3775e",
+      "name": "Prusa i3",
+      "status": "Idle",
+      "installedPlasticId": "b53044d9-5df6-44c9-94e1-ed02b1d0cebe",
+      "currentModelId": null,
+      "progress": 100,
+      "errorMessage": null
+    }
+  ],
+  "plastics": [
+    {
+      "id": "b53044d9-5df6-44c9-94e1-ed02b1d0cebe",
+      "type": "PLA Red",
+      "color": "Black",
+      "_length": 190
+    },
+    {
+      "id": "bb5b9b5b-2989-4ad6-8727-061948f358cb",
+      "type": "PETG",
+      "color": "Red",
+      "_length": 500
+    }
+  ],
+  "models": [
+    {
+      "id": "7394959b-6987-4255-baf3-100a43b3a517",
+      "name": "Ваза",
+      "gcodeSize": 10,
+      "createdAt": "2026-02-02T06:52:11.189Z",
+      "status": "Done",
+      "printColor": "Black"
+    },
+    {
+      "id": "e40b196d-f42f-422b-936d-a9c42536ae4a",
+      "name": "Шестеренка",
+      "gcodeSize": 25,
+      "createdAt": "2026-02-02T06:52:18.413Z",
+      "status": "Created",
+      "printColor": null
+    },
+    {
+      "id": "75f2134f-53c7-4a72-897c-9b90e80f7b71",
+      "name": "Шестеренка (копия)",
+      "gcodeSize": 25,
+      "createdAt": "2026-02-02T06:52:39.605Z",
+      "status": "Created",
+      "printColor": null
+    }
+  ]
+}
