@@ -46,12 +46,25 @@ export class Printer {
   }
 
   // Начать печать
-  startPrint(modelId: string, plasticId: string) {
+  startPrint(modelId: string | null, plasticId: string | null) {
+    if (!modelId) throw new Error("Модель не назначена");
+    if (!plasticId) throw new Error("Катушка не установлена");
+    
     this.status = 'Printing';
     this.currentModelId = modelId;
     this.installedPlasticId = plasticId;
     this.progress = 0;
-    this.errorMessage = null;
+  }
+  
+  // Добавь методы установки/снятия для тестов
+  installFilament(plasticId: string) {
+    if (this.installedPlasticId) throw new Error("Катушка уже установлена");
+    this.installedPlasticId = plasticId;
+  }
+  
+  removeFilament() {
+    if (this.status === 'Printing') throw new Error("Нельзя снять катушку во время печати");
+    this.installedPlasticId = null;
   }
 
   // Остановить печать (успех или ошибка)
